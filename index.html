@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        #var{
+            background-color:gold;
+            text-shadow:5px 6px 11px;
+            color:red;
+            margin:0px;
+            padding:0px;
+           
+            
+        }
+        .dropbtn{
+            background-color:red;
+            color:white;
+            padding:16px;
+            font-size:16px;
+            border:none;
+        }
+        .Tourism{
+            position:relative;
+            display:inline-block;
+        }
+        .Tourism-content{
+            display:none;
+            position:absolute;
+            background-color:#f1f1f1;
+            min-width:160px;
+            box-shadow:0px 8px 16px 0px blue;
+            z-index:1;   
+        }
+        .Tourism-content a{
+            color:black;
+            padding:12px 16px;
+            text-decoration:none;
+            display:block;
+        }
+        .Tourism-content a:hover{
+            background-color:#ddd;
+
+        }
+        .Tourism:hover  .Tourism-content{
+            display:block;
+        }
+        .Tourism:hover  .dropbtn{
+            background-color:#3e8e41;
+        }
+        .dropbtn{
+            background-color:crimson;
+            color:darkcyan;
+            padding:16px;
+            font-size:16px;
+            border:none;
+        }
+        .about_Varanasi{
+            position:relative;
+            display:inline-block;
+            
+        }
+        .about_Varanasi-content{
+            display:none;
+            position:absolute;
+            background-color:#f1f1f1;
+            min-width:160px;
+            box-shadow:0px 8px 16px 0px blue;
+            z-index:1;   
+        }
+        .about_Varanasi-content a{
+            color:black;
+            padding:12px 16px;
+            text-decoration:none;
+            display:block;
+        }
+        .about_Varanasi-content a:hover{
+            background-color:#ddd;
+
+        }
+        .about_Varanasi:hover .about_Varanasi-content{
+            display:block;
+        }
+        .about_Varanasi:hover .dropbtn{
+            background-color:#3e8e41;
+        }
+        .dropbtn{
+            background-color:red;
+            color:white;
+            padding:16px;
+            font-size:16px;
+            border:none;
+        }
+        .Public_Utilities{
+            position:relative;
+            display:inline-block;
+        }
+        .Public_Utilities-content{
+            display:none;
+            position:absolute;
+            background-color:#f1f1f1;
+            min-width:160px;
+            box-shadow:0px 8px 16px 0px blue;
+            z-index:1;   
+        }
+        .Public_Utilities-content a{
+            color:black;
+            padding:12px 16px;
+            text-decoration:none;
+            display:block;
+        }
+        .Public_Utilities-content a:hover{
+            background-color:#ddd;
+
+        }
+        .Public_Utilities:hover  .Public_Utilities-content{
+            display:block;
+        }
+        .Public_Utilities:hover  .dropbtn{
+            background-color:#3e8e41;
+        }
+        .dropbtn{
+            background-color:red;
+            color:white;
+            padding:16px;
+            font-size:16px;
+            border:none;
+        }
+        .help{
+            position:relative;
+            display:inline-block;
+        }
+        .help-content{
+            display:none;
+            position:absolute;
+            background-color:#f1f1f1;
+            min-width:160px;
+            box-shadow:0px 8px 16px 0px blue;
+            z-index:1;   
+        }
+        .help-content a{
+            color:black;
+            padding:12px 16px;
+            text-decoration:none;
+            display:block;
+        }
+        .help-content a:hover{
+            background-color:#ddd;
+
+        }
+        .help:hover  .help-content{
+            display:block;
+        }
+        .help:hover  .dropbtn{
+            background-color:#3e8e41;
+
+        }
+        .dropbtn{
+            background-color:red;
+            color:white;
+            padding:16px;
+            font-size:16px;
+            border:none;
+        }
+        .about{
+            position:relative;
+            display:inline-block;
+        }
+        .about-content{
+            display:none;
+            position:absolute;
+            background-color:#f1f1f1;
+            min-width:160px;
+            box-shadow:0px 8px 16px 0px blue;
+            z-index:1;   
+        }
+        .about-content a{
+            color:black;
+            padding:12px 16px;
+            text-decoration:none;
+            display:block;
+        }
+        .about-content a:hover{
+            background-color:#ddd;
+
+        }
+        .about:hover  .about-content{
+            display:block;
+        }
+        .about:hover  .dropbtn{
+            background-color:#3e8e41;
+
+        }
+    </style>
+</head>
+<body style="background-color:darkgrey;">
+    <header>
+        <img src="https://cdn.s3waas.gov.in/s36da37dd3139aa4d9aa55b8d237ec5d4a/uploads/2018/06/2018062238.jpg" alt=""><br>
+        <nav id="var"><h1 style="font-size:90pt; text-align:center;font-family:georgia;"><b>VARANASI <br> <sub style="font-size:20px;">THE CULTURAL CAPITAL OF INDIA</sub></b></h1>
+            <img src="data:image/jpeg;base64,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" alt="" height="150px" style="margin-top:0px;margin-left:8px;">
+        
+      <div style="font-size:20px;border:4px; border-radius:10px;margin-left:150px;">
+        <a href="index.html">HOME</a> &nbsp; &nbsp;
+        <a href="about_Varanasi.html">ABOUT VARANASI</a> &nbsp; &nbsp;
+        <a href="Tehsil.html">TEHSIL-VARANASI</a> &nbsp; &nbsp;
+        <a href="UrbanLocalBody.html">URBAN LOCAL BODIES</a> &nbsp; &nbsp;
+        <a href="Demography.html">DISTT. DEMOGRAPHY</a> &nbsp; &nbsp;
+        <a href="Collectorate.html">COLLECTORATE</a> &nbsp; &nbsp;
+        <a href="helpline.html">HELPLINE NO.</a> &nbsp; &nbsp;
+    </div>
+        
+        
+        
+      <div class="about_Varanasi" style="margin-left:400px;">
+          <a href="about_Varanasi.html"><button class="dropbtn">ABOUT-VARANASI</button></a>
+          <div class="about_Varanasi-content">
+              <a href="Tehsil.html">TEHSIL-VARANASI</a>
+              <a href="UrbanLocalBody.html">URBAN LOCAL BODIES</a>
+              <a href="Demography.html">DEMOGRAPHY</a>
+              <a href="Collectorate.html">COLLECTORATE</a>
+         </div>
+     </div>  
+
+
+        <div class="Tourism">
+            <button class="dropbtn">TOURISM</button>
+            <div class="Tourism-content">
+                <a href="GangaGhats.html">GANGA GHATS</a>
+                <a href="Sarnath.html">SARNATH</a>
+                <a href="Shri_Kashi_Vishwanath.html">SHRI KASHI VISHWANATH TEMPLE</a>
+                <a href="Shri_Sankat_Mochan.html">SHRI SANKAT MOCHAN TEMPLE</a>
+                <a href="templesOf_importance.html">TEMPLES OF IMPORTANCE</a>
+                <a href="Photo.html">PHOTO GALLERY</a>
+            </div>
+        </div>
+        <div class="Public_Utilities">
+            <button class="dropbtn">PUBLIC UTILITIES</button>
+            <div class="Public_Utilities-content">
+                <a href="/Hosp.html">HOSPITALS</a>
+                <a href="Universities.html/BHU.html">BANARAS HINDU UNIVERSITY(BHU)</a>
+                <a href="Universities.html/CHS.HTML">CENTRAL HINDU SCHOOL(CHS)</a>
+                <a href="Universities.html/MGKVP.HTML">MAHATMA GANDHI KASHI VIDYAPITH</a>
+                <a href="Universities.html/SampurnanandUniversity.html">SAMPURNANAND SANSKRIT UNIVERSITY</a>
+            </div>
+        </div>
+        <div class="help">
+            <button class="dropbtn">CONTACT US</button>
+            <div class="help-content">
+                <a href="Helpline.html">HELPLINE NO.</a>
+                <a href="DM_contact.html">DM OFFICE</a>
+                <a href="officersPhone_directory.html">OFFICERS PHONE DIRECTORY</a>
+                <a href="Collectorate.html">COLLECTORATTE</a>
+            </div>
+        </div>
+        <div class="about">
+            <button class="dropbtn">ABOUT US</button>
+            <div class="about-content">
+                <a href="About_me.html">ABOUT ME</a>
+                <a href="About_Sir.html">ABOUT SIR</a>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+      <img src="https://cdn.s3waas.gov.in/s36da37dd3139aa4d9aa55b8d237ec5d4a/uploads/2021/09/2021092725.jpg" alt="" height="250px">
+      <img src="https://cdn.s3waas.gov.in/s36da37dd3139aa4d9aa55b8d237ec5d4a/uploads/2019/11/2019110175.jpg" alt="" align="right">
+      <h1 style="text-align:right;">Shri Kaushal Raj Sharma</h1>
+      <div style="text-align:right; margin-top:0px; font-size:20px;margin-right:30px; ">
+        <b>Shri Kaushal Raj Sharma</b><br>
+        <b>Hon. District Magistrate(I.A.S.), Varanasi</b><br>
+        <a href="DM_profile.html"><img src="" alt=""> <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="" height="30px"><b> PROFILE </b></a> &nbsp; &nbsp;
+        <a href="DM_contact.html"><img src="https://cdn-icons.flaticon.com/png/128/3095/premium/3095610.png?token=exp=1636171613~hmac=1aa8025fcd9f54d7c7dc87732a7d89f3" alt="" height="30px"><b> CONTACT</b></a><br>
+        <a href="https://www.facebook.com/dmvaranasi"><img src="https://cdn-icons.flaticon.com/png/128/2175/premium/2175193.png?token=exp=1636172991~hmac=afb3686a86c2a0deb3dc285037cde4e8" alt="" height="50px" align="justify" style="margin-top:10px;"></a><a href="https://twitter.com/dmvaranasi2016"><img src="https://cdn-icons.flaticon.com/png/128/3128/premium/3128212.png?token=exp=1636173427~hmac=6638bd0e48396cbf2c30d18bcb2e1b1d" alt="" height="60px" style="margin-left:50px;"></a>
+      </div><hr>
+    </header>
+    
+    <main>
+        
+        
+        <div style="background-color:lavenderblush;border-radius:2px; ">
+            <img src="https://cdn-icons.flaticon.com/png/128/4958/premium/4958125.png?token=exp=1635922386~hmac=b3c7ffb07506a5c8296e9d45ba06a852" alt=""> <h1> <b> ABOUT DISTRICT</b></h1>
+            <p style="margin-left:20px; font-family:calibri;font-size:20px;">Varanasi</b> (Vārāṇasī; Hindustani pronunciation: [ʋaːˈraːɳəsi] (About this soundlisten)),<br> also known as Kashi (Kāśī; [kaːʃiː]), Benares[11] or Banaras (Banāras; [bəˈnaːrəs] (About this soundlisten)),<br> is a city on the banks of the river Ganges in Uttar Pradesh, India,<br> 320 kilometres (200 mi) south-east of the state capital, Lucknow, and 121 kilometres (75 mi) east of Allahabad. <br> A major religious hub in India, <b> it is the holiest of the seven sacred cities in Hinduism and .......<a href="about_Varanasi.html">View more</a> </p>
+                <div style="font-size:15pt;padding-left:600px;padding-right:50px;background-color:pink;margin-left:500px;">
+                    <h1>At a Glance</h1>
+                    <ul style="font-size:1em;">
+                        <li>Area: 1535 Sq. Km.</li>
+                        <li>Villages: 1360</li>
+                        <li>Male: 1,921,857</li>
+                    </ul>  
+                    <ul>
+                        <li>Language: Hindi, Bhojpuri</li>
+                        <li>Population: 3,676,841</li>
+                        <li>Female: 1,754,984</li>
+                    </ul>
+                </div> &nbsp;
+        </div>
+            <div style="background-color:azure; text-align:right; margin-left:0px;">
+                <aside style="text-align:left; font-size:30px;"><a href="Tehsil.html"><img src="https://cdn-icons-png.flaticon.com/128/1057/1057118.png" alt="" height="110px">3 Tehsils</a>
+                </aside>
+                <aside style="text-align:left; font-size:30px;">
+                    <a href="UrbanLocalBody.html"><img src="https://cdn-icons-png.flaticon.com/128/619/619034.png" alt="" height="110px">3  Urban Local Bodies</a>
+                </aside> 
+                <aside style="text-align:left; font-size:30px;">
+                    <a href="officersPhone_directory.html"><img src="https://cdn-icons.flaticon.com/png/128/3033/premium/3033286.png?token=exp=1635937786~hmac=62c37325dddb48b7f2de9e306d749bc6" alt="">  28   Police Station</a>
+                </aside>
+            </div>
+        <div style="text-align:right; background-color:darkseagreen;">
+                <aside style="text-align:right; margin-right:30px; border-radius:4px;">
+                    <h1 >District Map</h1> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.23982810129!2d82.92106861019738!3d25.320746099847305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1635515667864!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </aside>
+        </div>
+    </main>
+        <footer style="margin:0px; margin-left:0px;  font-size:20px;">
+            
+            <div style="margin:0px; background-color:orange; text-align:center; font-size:20pt;">
+                <b>Contact Us Here-District Varanasi</b><br>
+                <a href="tel:+9454417579"><img src="https://cdn-icons-png.flaticon.com/128/3616/3616215.png" alt="" height="50px">Call Us-9454417579</a> &nbsp; &nbsp;
+                <a href="mailto:dmvar@nic.in"><img src="https://cdn-icons-png.flaticon.com/128/552/552486.png" alt="" height="50px">Mail Us-dmvar@nic.in</a> <br><hr>
+            
+             &copy; copyright 2021. All rights reserved. <br>
+             <b>Developed and maintained by Divyansh Rai(Roll No. 19/1126)</b><img src="Divyansh.jpg" alt="" height="100px"><br>
+             <a href="tel:+8368991919"><img src="https://cdn-icons-png.flaticon.com/128/3616/3616215.png" alt="" height="50px">(8368991919)</a>
+            </div>
+            
+        
+        </footer>
+    </body>
+</html>
